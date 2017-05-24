@@ -26,17 +26,17 @@ public class AsteroidDB : ScriptableObject
 		switch (type)
 		{
 			case AsteroidType.Large:
-				list = large;
-				values = largeDefault;
-				break;
+			list = large;
+			values = largeDefault;
+			break;
 			case AsteroidType.Medium:
-				list = medium;
-				values = mediumDefault;
-				break;
+			list = medium;
+			values = mediumDefault;
+			break;
 			case AsteroidType.Small:
-				list = small;
-				values = smallDefault;
-				break;
+			list = small;
+			values = smallDefault;
+			break;
 		}
 
 		Asteroid asteroid = new Asteroid();
@@ -63,7 +63,7 @@ public class AsteroidDB : ScriptableObject
 [System.Serializable]
 public class AsteroidDefaultValue
 {
-	public float minVelocity = 1;
+	public float minVelocity = 2;
 	public float maxVelocity = 5;
 	public float minAngular = 5;
 	public float maxAngular = 20;

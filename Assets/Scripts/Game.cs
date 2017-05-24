@@ -6,15 +6,6 @@ using UnityEngine.UI;
 
 public class Game : MonoBehaviour
 {
-	public class GameState
-	{
-		public bool isRunning = false;
-		public int score;
-		public int wave = 0;
-		public int baseAsteroidCount = 4;
-		public int perWaveIncrease = 2;
-	}
-
 	public static readonly Vector2 DefaultPos = Vector2.one * 9999;
 
 	public PrefabDB prefabDB;
