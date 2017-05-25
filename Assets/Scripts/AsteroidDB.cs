@@ -56,6 +56,9 @@ public class AsteroidDB : ScriptableObject
 		{
 			Debug.Log("Asteroid with Sprite '" + sprite.name + "' already exists");
 		}
+
+		EditorUtility.SetDirty(this);
+		AssetDatabase.SaveAssets();
 	}
 #endif
 }

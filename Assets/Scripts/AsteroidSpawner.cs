@@ -67,7 +67,11 @@ public class AsteroidSpawner
 
 	public void OnAsteroidDeath(AsteroidType type, Vector2 position)
 	{
-		if (type == AsteroidType.Small) { return; }
+		if (type == AsteroidType.Small)
+		{
+			OnAsteroidCountChanged(type);
+			return;
+		}
 
 		var spawnType = AsteroidType.Large;
 		int spawnCount = 0;
